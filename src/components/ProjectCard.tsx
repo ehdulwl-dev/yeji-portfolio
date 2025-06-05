@@ -27,12 +27,12 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div 
-      className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 animate-fade-in"
+      className="bg-white dark:bg-white text-black border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 animate-fade-in"
       style={{ animationDelay: `${delay}ms` }}
     >
       {/* Thumbnail */}
       {thumbnail && (
-        <div className="h-48 bg-muted overflow-hidden">
+        <div className="h-48 bg-gray-100 overflow-hidden">
           <img
             src={`https://images.unsplash.com/${thumbnail}?auto=format&fit=crop&w=800&q=80`}
             alt={title}
@@ -42,16 +42,16 @@ const ProjectCard = ({
       )}
       
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-primary mb-3">{title}</h3>
+        <h3 className="text-xl font-bold text-black mb-3">{title}</h3>
         
-        <p className="text-muted-foreground mb-4 leading-relaxed">{description}</p>
+        <p className="text-gray-700 mb-4 leading-relaxed">{description}</p>
         
         {/* Tech Stack */}
         <div className="mb-4">
-          <h4 className="text-sm font-medium text-primary mb-2">기술 스택</h4>
+          <h4 className="text-sm font-semibold text-black mb-2">기술 스택</h4>
           <div className="flex flex-wrap gap-2">
             {techStack.map((tech, index) => (
-              <Badge key={index} variant="secondary" className="text-xs">
+              <Badge key={index} variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
                 {tech}
               </Badge>
             ))}
@@ -59,17 +59,17 @@ const ProjectCard = ({
         </div>
         
         <div className="mb-4">
-          <h4 className="text-sm font-medium text-primary mb-2">담당 역할</h4>
-          <p className="text-sm text-muted-foreground">{role}</p>
+          <h4 className="text-sm font-semibold text-black mb-2">담당 역할</h4>
+          <p className="text-sm text-gray-700">{role}</p>
         </div>
         
         <div className="mb-6">
-          <h4 className="text-sm font-medium text-primary mb-2">주요 기능</h4>
+          <h4 className="text-sm font-semibold text-black mb-2">주요 기능</h4>
           <div className="space-y-1">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start space-x-2">
-                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-sm text-muted-foreground">{feature}</span>
+                <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <span className="text-sm text-gray-700">{feature}</span>
               </div>
             ))}
           </div>
@@ -81,7 +81,7 @@ const ProjectCard = ({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-4 py-2 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors flex-1 justify-center"
+              className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white hover:bg-gray-700 rounded-lg transition-colors flex-1 justify-center"
             >
               <Github size={16} />
               <span className="text-sm font-medium">GitHub</span>
@@ -93,7 +93,7 @@ const ProjectCard = ({
               href={blogUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg transition-colors flex-1 justify-center"
+              className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white hover:bg-blue-500 rounded-lg transition-colors flex-1 justify-center"
             >
               <ExternalLink size={16} />
               <span className="text-sm font-medium">Blog</span>
