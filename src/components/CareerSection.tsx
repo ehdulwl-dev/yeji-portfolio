@@ -38,7 +38,7 @@ const CareerSection = () => {
   ];
 
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/10">
+    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* 경력 정보 */}

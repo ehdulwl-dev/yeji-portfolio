@@ -30,7 +30,7 @@ const Index = () => {
               className="group relative"
             >
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-light text-primary hover:text-gray-300 transition-colors duration-300 tracking-tight">
-                doyeji
+                Doyeji
               </h1>
               
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-full h-0.5 bg-primary transition-all duration-300"></div>

@@ -21,7 +21,7 @@ const Navigation = () => {
             to="/" 
             className="text-xl font-bold text-primary hover:text-gray-500 transition-colors"
           >
-            doyeji
+            doyeji.dev
           </Link>
           
           <div className="flex items-center space-x-6">
