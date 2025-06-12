@@ -1,7 +1,7 @@
 
 import Navigation from "@/components/Navigation";
-import EducationCard from "@/components/EducationCard";
-import educationData from "@/data/educationData.json";
+import CertificateCard from "@/components/CertificateCard";
+import certificateData from "@/data/certificateData.json";
 
 const Education = () => {
   return (
@@ -12,16 +12,16 @@ const Education = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-light mb-4">
-              Education
+              Certificate
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              지속적인 학습을 통해 쌓아온 다양한 교육 경험과 습득한 기술들을 소개합니다.
+              지금까지 성장을 위해 취득한 자격증을 소개합니다.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {educationData.educations.map((education, index) => (
-              <EducationCard
+            {certificateData.educations.map((education, index) => (
+              <CertificateCard
                 key={education.id}
                 institution={education.institution}
                 program={education.program}

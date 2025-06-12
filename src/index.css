@@ -15,10 +15,12 @@
     --popover: 0 0% 85%;
     --popover-foreground: 0 0% 15%;
 
-    --primary: 0 0% 25%;
+    --title: black;
+
+    --primary: 0 0% 100%;
     --primary-foreground: 0 0% 95%;
 
-    --secondary: 219 100% 86%;
+    --secondary: 221 83% 54%;
     --secondary-foreground: 0 0% 15%;
 
     --muted: 0 0% 70%;
@@ -57,10 +59,12 @@
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
+    --title: white;
+
+    --primary: 0 0% 15%;
     --primary-foreground: 0 0% 9%;
 
-    --secondary: 315 63% 68%;
+    --secondary: 0 0% 100%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 14.9%;

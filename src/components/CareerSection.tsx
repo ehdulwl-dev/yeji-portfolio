@@ -4,36 +4,44 @@ import { Briefcase, GraduationCap, Calendar, Award } from "lucide-react";
 const CareerSection = () => {
   const careerInfo = [
     {
-      company: "테크 스타트업",
-      position: "Frontend Developer",
-      period: "2022.03 - 현재",
-      description: "React, TypeScript를 활용한 웹 애플리케이션 개발",
+      company: "(주)하이지노",
+      position: "제조DX부서 대리/책임연구원",
+      period: "2020.08 - 현재 (4년 8개월)",
+      description: "Spring Boot F/W 기반 MES 웹 시스템 개발 및 운영 관리",
       achievements: [
-        "사용자 경험 개선으로 전환율 25% 향상",
+        "자동차 부품, 레이저 가공, 2차전지 반도체 등 다양한 제조 공정 대상 구축",
         "컴포넌트 라이브러리 구축 및 유지보수",
-        "반응형 웹 디자인 구현"
-      ]
-    },
-    {
-      company: "디지털 에이전시",
-      position: "Web Developer",
-      period: "2020.09 - 2022.02",
-      description: "다양한 클라이언트 프로젝트 개발 및 운영",
-      achievements: [
-        "10개 이상의 웹사이트 개발 완료",
-        "성능 최적화로 로딩 속도 40% 개선",
-        "크로스 브라우저 호환성 확보"
+        "PDA 기반 생산 재고 관리 기능 개발 및 연동",
+        "SQL 데이터베이스 구축 경험"
       ]
     }
   ];
 
   const educationInfo = [
+   {
+      school: "성균관대학교 일반대학원",
+      major: "스마트팩토리융합학과",
+      period: "2022.08 - 2025.02",
+      degree: "석사 졸업",
+      gpa: "4.05 / 4.5",
+      thesis: "MfgCNC-Ark: CNC 제조 공정에서 Mean Teacher 구조의 LSTM-AE 기반 범용 이상 탐지에 관한 연구",
+      research1: "HVLV-Motor-KC: Production Efficiency of HVLV Motor Classification Using K-means Clustering / WSEAS Transactions on Information Science and Applications / SCOPUS / 14 October 2024",
+      research2: "Designing a Cloud-Based MES-SaaS Platform Model in Precision Machining / WSEAS Transactions on Computer Research / SCOPUS / 21 September 2023"
+    },
     {
-      school: "한국대학교",
-      major: "컴퓨터공학과",
-      period: "2016.03 - 2020.02",
-      degree: "학사 졸업",
-      gpa: "3.8/4.5"
+      school: "학점은행제대학교",
+      major: "정보통신공학과",
+      period: "2020.07 - 2021.02",
+      degree: "공학사 졸업",
+      gpa: "3.67 / 4.5"
+    },
+    {
+      school: "명지전문대학",
+      major: "정보통신공학",
+      period: "2017.03 - 2020.02",
+      degree: "전문공학사 졸업",
+      gpa: "3.329 / 4.5",
+      thesis: " IoT 기반 자동차 스마트 키 애플리케이션"
     }
   ];
 
@@ -91,9 +99,33 @@ const CareerSection = () => {
                     <div>
                       <h3 className="text-xl font-bold text-black">{education.school}</h3>
                       <p className="text-gray-700">{education.major}</p>
-                      <p className="text-sm text-gray-600 mt-1">GPA: {education.gpa}</p>
+                      <p className="text-sm text-gray-600 mt-1">학점: {education.gpa}</p>
+                    
+                      
+                      {education.thesis && (
+                        <p className="text-sm text-gray-600 mt-1">
+                          학위 논문: {education.thesis}
+                        </p>
+                      )}
+
+                      {(education.research1 || education.research2) && (
+                        <>
+                          <br />
+                          <hr />
+                        </>
+                      )}
+
+                      {(education.research1 || education.research2) && (
+                        <>
+                          <p className="text-sm text-gray-600 mt-1">연구 실적:</p>
+                          <ul className="text-sm text-gray-600 mt-1 list-disc list-inside">
+                            <li>{education.research1}</li>
+                            <li>{education.research2}</li>
+                          </ul>
+                        </>
+                      )}
                     </div>
-                    <div className="flex flex-col items-start sm:items-end mt-2 sm:mt-0">
+                    <div className="flex flex-col items-start sm:items-end mt-2 sm:mt-0 min-w-[0px] text-right whitespace-nowrap">
                       <div className="flex items-center space-x-2 text-sm text-gray-600">
                         <Calendar size={16} />
                         <span>{education.period}</span>

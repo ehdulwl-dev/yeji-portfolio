@@ -1,6 +1,6 @@
 
 import { Link, useLocation } from "react-router-dom";
-import { Home, User, Briefcase, GraduationCap, Sun, Moon } from "lucide-react";
+import { Home, User, Briefcase, GraduationCap, ShieldCheck, Sun, Moon } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 
 const Navigation = () => {
@@ -11,6 +11,7 @@ const Navigation = () => {
     { path: "/", icon: Home, label: "Home" },
     { path: "/projects", icon: Briefcase, label: "Projects" },
     { path: "/education", icon: GraduationCap, label: "Education" },
+    { path: "/certificate", icon: ShieldCheck, label: "Certificate" },
   ];
 
   return (
@@ -19,7 +20,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <Link 
             to="/" 
-            className="text-xl font-bold text-primary hover:text-gray-500 transition-colors"
+            className="text-xl font-bold text-secondary hover:text-gray-500 transition-colors"
           >
             doyeji.dev
           </Link>

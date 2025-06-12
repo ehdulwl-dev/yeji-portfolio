@@ -29,7 +29,7 @@ const Index = () => {
               onClick={handleNameClick}
               className="group relative"
             >
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-light text-primary hover:text-gray-300 transition-colors duration-300 tracking-tight">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-light text-title hover:text-gray-300 transition-colors duration-300 tracking-tight">
                 Doyeji
               </h1>
               
@@ -37,7 +37,7 @@ const Index = () => {
             </button>
             
             <p className="mt-8 text-lg text-muted-foreground animate-slide-up">
-              Frontend Developer & Problem Solver
+              Frontend Developer & Backend Developer
             </p>
             
             <p className="mt-4 text-sm text-muted-foreground/70 animate-slide-up" style={{ animationDelay: "200ms" }}>
