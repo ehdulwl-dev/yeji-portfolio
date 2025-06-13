@@ -21,7 +21,7 @@ const EducationCard = ({
       <div className="flex justify-between items-start">
         <div>
           <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200 mb-4">{type}</Badge>
-          <h3 className="text-lg font-bold text-black">{institution}</h3>
+          <h3 className="text-md sm:text-lg font-semibold text-blue-900">{institution}</h3>
         </div>
         <div className="flex items-center whitespace-nowrap text-sm text-gray-600">
           <span>{period} 취득</span>
