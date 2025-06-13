@@ -3,57 +3,78 @@
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce 플랫폼",
-      "description": "React와 TypeScript를 사용하여 구축한 현대적인 온라인 쇼핑몰입니다. 사용자 친화적인 인터페이스와 효율적인 상태 관리를 통해 매끄러운 쇼핑 경험을 제공합니다.",
-      "role": "Frontend 개발 담당, UI/UX 디자인 구현, 상태 관리 및 API 연동",
+      "title": "탄소 절력 절감 모니터링 개발",
+      "description": "실시간 탄소배출량을 수집·분석·시각화하는 시스템을 구축한 프로젝트",
+      "role": "탄소배출량 수집 로직 설계 및 개발, MES/FEMS 연동 API 구현, 대시보드 화면 기획 및 UI 개발",
       "features": [
-        "반응형 웹 디자인 구현",
-        "장바구니 및 결제 시스템 개발",
-        "상품 검색 및 필터링 기능",
-        "사용자 인증 및 회원 관리",
-        "관리자 대시보드 구축"
+        "전력 설비 데이터 연계 수집 API 개발",
+        "실시간 모니터링 대시보드 구현",
+        "전력 감축 예측 모듈 개발"
       ],
-      "techStack": ["React", "TypeScript", "Redux", "Styled Components", "Node.js"],
-      "githubUrl": "https://github.com/doyeji/ecommerce-platform",
-      "blogUrl": "https://doyeji.tistory.com/ecommerce-project",
+      "techStack": ["Spring Boot", "Java", "PostgreSQL", "JavaScript", "Chart.js,", "UDP통신"],
       "thumbnail": "photo-1488590528505-98d2b5aba04b"
     },
     {
       "id": 2,
-      "title": "날씨 대시보드",
-      "description": "실시간 날씨 정보를 제공하는 인터랙티브 대시보드입니다. 다양한 지역의 날씨 데이터를 시각화하고 사용자가 쉽게 확인할 수 있도록 구현했습니다.",
-      "role": "전체 개발 담당, API 연동 및 데이터 시각화 구현",
+      "title": "전자서명 기반 인증 모듈 개발 ",
+      "description": "Spring Boot 기반의 시스템에 한컴위드 공동인증서 인증 모듈을 연동하여 서명 및 사용자 인증 프로세스 모듈을 개발했습니다.",
+      "role": "전자계약 프로세스 설계 및 구현, 인증/서명 API 연동, 전자서명 결과 처리 및 검증",
       "features": [
-        "실시간 날씨 데이터 API 연동",
-        "지역별 날씨 정보 검색",
-        "차트를 활용한 데이터 시각화",
-        "즐겨찾기 지역 관리",
-        "다크/라이트 테마 지원"
+        "한컴위드 AnySign 연동을 통한 전자서명 기능 구현",
+        "전자서명 완료 후 서명 결과값 백엔드 검증 로직 구현",
+        "계약서 PDF 미리보기 및 S3 signed URL 처리",
+        "로그인 없이 접근 가능한 엔드포인트에 대한 Spring Security 설정"
       ],
-      "techStack": ["React", "Chart.js", "OpenWeather API", "CSS3"],
-      "githubUrl": "https://github.com/doyeji/weather-dashboard",
-      "blogUrl": "https://doyeji.tistory.com/weather-dashboard",
-      "thumbnail": "photo-1461749280684-dccba630e2f6"
+      "techStack": ["Spring Boot", "Java", "Thymeleaf", "한컴위드 API,", "공동인증서", "AWS S3"],
+      "thumbnail": "photo-1488590528505-98d2b5aba04b"
     },
     {
       "id": 3,
-      "title": "태스크 관리 앱",
-      "description": "팀 프로젝트를 효율적으로 관리할 수 있는 태스크 관리 애플리케이션입니다. 드래그 앤 드롭 기능과 실시간 협업을 지원합니다.",
-      "role": "Frontend 개발 리드, 실시간 기능 구현 및 사용자 경험 최적화",
+      "title": "LOT 기반 재고 이력 관리 시스템 고도화",
+      "description": "모터 제조업체의 MES 시스템 내 자재/제품 재고 및 LOT 이력 관리를 고도화한 프로젝트입니다. 자재 수불 흐름의 정합서을 확보하고 제품별 이력 추적을 강화하여 생산 품질 및 추적성 확보에 기여했습니다.",
+      "role": "재고/LOT 관리 기능 설계 및 개발, 상태 전이 로직 구현, 이력 추적 기능 개발, 바코드 연동",
       "features": [
-        "드래그 앤 드롭으로 태스크 관리",
-        "실시간 협업 및 댓글 시스템",
-        "프로젝트별 대시보드",
-        "팀원 권한 관리",
-        "진행 상황 추적 및 리포트"
+        "자재 및 제품의 수불 흐름을 기반으로 한 LOT 이력 관리 기능 구현",
+        "생산·품질·출하 간 상태 전이(State Transition) 로직 설계 및 적용",
+        "다단계 BOM 트리 기반의 재고 구조 설계 및 이력 연동",
+        "Zebra 바코드 프린터 연동 및 ZPL 스크립트 생성 API 개발",
+        "사용자 중심의 재고 이력 조회 UI 및 필터링 기능 구현"
       ],
-      "techStack": ["React", "Socket.io", "MongoDB", "Express", "DnD Kit"],
-      "githubUrl": "https://github.com/doyeji/task-manager",
-      "blogUrl": "https://doyeji.tistory.com/task-manager-app",
+      "techStack": ["Spring Boot", "Java", "MyBatis", "MSSQL", "JavaScript"],
+      "thumbnail": "photo-1461749280684-dccba630e2f6"
+    },
+    {
+      "id": 4,
+      "title": "충북테크노파크 스마트팩토리 고도화 프로젝트",
+      "description": "설비 연동 기반 테스트베드 통합 플랫폼 구축 및 MES 실시간 모니터링 웹 시스템 개발",
+      "role": "PL로서 전체 개발 일정 관리, Redis 기반 설비 연동 설계 및 실시간 모니터링 화면 기획·개발 총괄",
+      "features": [
+        "관제 모니터링 UI 기획 및 설계",
+        "Redis를 활용한 실시간 설비 상태 수집 및 모니터링",
+        "MES-PLC 간 제어 명령 송수신 로직 설계",
+        "디지털트윈·EMS 데이터 연동 API 개발",
+        "AI 예지보전 결과 연동 및 설비 상태 시각화"
+      ],
+      "techStack": ["Spring MVC", "Java", "Redis", "MySQL", "Chart.js", "REST API"],
       "thumbnail": "photo-1498050108023-c5249f4df085"
     },
     {
       "id": 4,
+      "title": "자동차 부품 MES 시스템 구축 및 성능 최적화",
+      "description": "사출·봉제 라인 제조 현장에 특화된 MES 시스템을 구축하고, 주요 기능 및 데이터 처리 효율을 개선한 프로젝트. ",
+      "role": "MES 기능 개발 및 트랜잭션 처리, 성능 최적화, 인증 대응, PL 역할로 일정 및 품질 관리",
+      "features": [
+        "기준/영업/구매/품질/생산/재고 등 핵심 모듈 API 및 로직 개발",
+        "LOT 추적 시스템 구축으로 이력 관리 기능 강화",
+        "MyBatis foreach 기반 BULK INSERT로 대용량 데이터 처리 효율화",
+        "복잡한 서브쿼리 리팩토링 + Index 튜닝으로 → 주요 쿼리 Cost 11 → 3으로 감소, 평균 응답속도 70% 이상 향상",
+        "GS 인증 요건 대응 개발 및 테스트 지원"
+      ],
+      "techStack": ["Spring MVC", "Java", "MyBatis", "jQuery", "Bootstrap"],
+      "thumbnail": "photo-1498050108023-c5249f4df085"
+    },
+    {
+      "id": 5,
       "title": "개인 블로그 사이트",
       "description": "개발 경험과 학습 내용을 공유하는 개인 블로그입니다. Markdown 에디터와 SEO 최적화를 적용하여 구축했습니다.",
       "role": "전체 개발 담당, SEO 최적화 및 성능 튜닝",

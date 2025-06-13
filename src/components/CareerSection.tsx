@@ -48,7 +48,7 @@ const CareerSection = () => {
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* 경력 정보 */}
           <section>
             <div className="flex items-center space-x-3 mb-8">
@@ -58,7 +58,7 @@ const CareerSection = () => {
             
             <div className="space-y-6">
               {careerInfo.map((career, index) => (
-                <div key={index} className="bg-white dark:bg-white text-black rounded-xl p-6 shadow-lg animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
+                <div key={index} className="bg-white dark:bg-white text-black rounded-xl p-6 shadow-lg animate-fade-in">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-black">{career.company}</h3>
@@ -94,35 +94,23 @@ const CareerSection = () => {
             
             <div className="space-y-6">
               {educationInfo.map((education, index) => (
-                <div key={index} className="bg-white dark:bg-white text-black rounded-xl p-6 shadow-lg animate-fade-in" style={{ animationDelay: `${index * 200 + 400}ms` }}>
+                <div key={index} className="bg-gray-50 dark:bg-white text-black rounded-xl p-6 shadow-lg animate-fade-in">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
                     <div>
-                      <h3 className="text-xl font-bold text-black">{education.school}</h3>
-                      <p className="text-gray-700">{education.major}</p>
-                      <p className="text-sm text-gray-600 mt-1">학점: {education.gpa}</p>
+                      <h3 className="text-lg font-bold text-gray-900">{education.school}</h3>
+                      <p className="text-sm text-gray-700">{education.major}</p>
+                      <p className="text-xs text-gray-500 mt-1">학점: {education.gpa}</p>
                     
                       
-                      {education.thesis && (
-                        <p className="text-sm text-gray-600 mt-1">
-                          학위 논문: {education.thesis}
-                        </p>
-                      )}
-
-                      {(education.research1 || education.research2) && (
-                        <>
-                          <br />
-                          <hr />
-                        </>
-                      )}
-
-                      {(education.research1 || education.research2) && (
-                        <>
-                          <p className="text-sm text-gray-600 mt-1">연구 실적:</p>
-                          <ul className="text-sm text-gray-600 mt-1 list-disc list-inside">
-                            <li>{education.research1}</li>
-                            <li>{education.research2}</li>
-                          </ul>
-                        </>
+                      {(education.thesis || education.research1 || education.research2) && (
+                        <details className="mt-2">
+                          <summary className="cursor-pointer text-sm text-blue-600">세부 연구내용 보기</summary>
+                          <div className="mt-2 space-y-1 text-sm text-gray-600">
+                            {education.thesis && <p>학위 논문: {education.thesis}</p>}
+                            {education.research1 && <p>• {education.research1}</p>}
+                            {education.research2 && <p>• {education.research2}</p>}
+                          </div>
+                        </details>
                       )}
                     </div>
                     <div className="flex flex-col items-start sm:items-end mt-2 sm:mt-0 min-w-[0px] text-right whitespace-nowrap">

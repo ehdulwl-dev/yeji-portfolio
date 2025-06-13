@@ -10,8 +10,8 @@ const Navigation = () => {
   const navItems = [
     { path: "/", icon: Home, label: "Home" },
     { path: "/projects", icon: Briefcase, label: "Projects" },
-    { path: "/education", icon: GraduationCap, label: "Education" },
     { path: "/certificate", icon: ShieldCheck, label: "Certificate" },
+    { path: "/education", icon: GraduationCap, label: "Education" }
   ];
 
   return (

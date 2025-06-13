@@ -1,9 +1,16 @@
 
+import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+
 import Navigation from "@/components/Navigation";
 import ProjectCard from "@/components/ProjectCard";
 import projectsData from "@/data/projectsData.json";
 
 const Projects = () => {
+
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [isAllOpen, setIsAllOpen] = useState(true);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -19,6 +26,28 @@ const Projects = () => {
             </p>
           </div>
           
+          <div className="flex justify-end mb-6">
+            <button
+                onClick={() => {
+                  if (isAllOpen) {
+                    setOpenIndex(null);       // 전체 닫기
+                    setIsAllOpen(false);
+                  } else {
+                    setOpenIndex(-1);         // 전체 열기: -1은 특별한 openIndex로 처리
+                    setIsAllOpen(true);
+                  }
+                }}
+                className="text-sm text-blue-600 hover:underline transition mr-2"
+              >
+               {isAllOpen ? (
+                <ChevronUp size={16} className="inline-block mr-1" />
+              ) : (
+                <ChevronDown size={16} className="inline-block mr-1" />
+              )}
+              {isAllOpen ? "간략히 보기" : "상세 보기"}
+              </button>
+            </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {projectsData.projects.map((project, index) => (
               <ProjectCard
@@ -32,6 +61,10 @@ const Projects = () => {
                 blogUrl={project.blogUrl}
                 thumbnail={project.thumbnail}
                 delay={index * 100}
+                isOpen={isAllOpen || openIndex === index}  // 👈 전체 보기 or 특정 인덱스만 열기
+                onToggle={() =>
+                  setOpenIndex(openIndex === index ? null : index)
+                }
               />
             ))}
           </div>

@@ -1,6 +1,5 @@
 
 import { Badge } from "@/components/ui/badge";
-import { Calendar } from "lucide-react";
 
 interface CertificateCardProps {
   institution: string;
@@ -17,16 +16,14 @@ const EducationCard = ({
 }: CertificateCardProps) => {
   return (
     <div 
-      className="bg-white dark:bg-white text-black border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate-fade-in"
-      style={{ animationDelay: `${delay}ms` }}
+      className="bg-gray-50 dark:bg-white text-black border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300"
     >
       <div className="flex justify-between items-start">
         <div>
-          <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200 mb-2">{type}</Badge>
-          <h3 className="text-xl font-bold text-black">{institution}</h3>
+          <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200 mb-4">{type}</Badge>
+          <h3 className="text-lg font-bold text-black">{institution}</h3>
         </div>
-        <div className="flex items-center space-x-2 text-sm text-gray-600">
-          <Calendar size={16} />
+        <div className="flex items-center whitespace-nowrap text-sm text-gray-600">
           <span>{period} 취득</span>
         </div>
       </div>

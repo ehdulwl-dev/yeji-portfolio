@@ -27,8 +27,7 @@ const EducationCard = ({
 }: EducationCardProps) => {
   return (
     <div 
-      className="bg-white dark:bg-white text-black border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 animate-fade-in"
-      style={{ animationDelay: `${delay}ms` }}
+      className="bg-white dark:bg-white text-black border border-gray-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300"
     >
       <div className="flex justify-between items-start mb-4">
         <div>
