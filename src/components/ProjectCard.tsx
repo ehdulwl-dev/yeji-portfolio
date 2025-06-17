@@ -36,13 +36,22 @@ const ProjectCard = ({
       className="bg-white dark:bg-white text-black border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300"
     >
      
-      <div className="bg-gray-100 px-4 h-16 flex items-center justify-center">
-       <h3 className="text-md sm:text-lg font-semibold text-blue-900 truncate"> {title}</h3>
+      <div className="h-48 bg-gray-100 overflow-hidden">
+        {/* Thumbnail */}
+        {thumbnail && (
+          <img
+            src={`${thumbnail}`}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        )}
       </div>
+    
 
     {isOpen && (
       <div className="p-6">
-        
+        <h3 className="text-xl font-bold text-black mb-3">{title}</h3>
+
         <p className="text-gray-800 text-sm mb-3 leading-relaxed">{description}</p>
         
         <div className="mb-4">

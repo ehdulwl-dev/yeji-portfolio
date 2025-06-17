@@ -48,13 +48,15 @@ const Navigation = () => {
               })}
             </div>
             
+            {/* 테마 버튼
             <button
               onClick={toggleTheme}
               className="p-2 rounded-md text-muted-foreground hover:text-primary hover:bg-secondary/50 transition-colors"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
+            </button> */
+            }
           </div>
         </div>
       </div>

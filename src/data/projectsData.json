@@ -3,6 +3,20 @@
   "projects": [
     {
       "id": 1,
+      "title": "시니어 재취업 AI 구직 지원 서비스 개발",
+      "description": "서울 열린데이터 광장 공공데이터 활용 창업 경진대회 팀 프로젝트",
+      "role": "서울시 열린데이터 광장 및 고용 24의 Open API 연동 및 서비스 구축",
+      "features": [
+        "시니어 맞춤 채용 정보와 교육 프로그램 정보를 정기적으로 자동 수집",
+        "오픈소스 기반의 Supabase(PostgreSQL 기반) 활용",
+        "Typescript 및 React 기반의 시니어 친화적인 UI/UX 설계 및 구현",
+        "Vercel을 통한 운영서버 구축"
+      ],
+      "techStack": ["lovable", "Supabase", "OpenAPI", "Typescript", "React,", "Vercel"],
+      "thumbnail": "/assets/image/project_navi.png"
+    },
+    {
+      "id": 1,
       "title": "탄소 절력 절감 모니터링 개발",
       "description": "실시간 탄소배출량을 수집·분석·시각화하는 시스템을 구축한 프로젝트",
       "role": "탄소배출량 수집 로직 설계 및 개발, MES/FEMS 연동 API 구현, 대시보드 화면 기획 및 UI 개발",
@@ -11,8 +25,8 @@
         "실시간 모니터링 대시보드 구현",
         "전력 감축 예측 모듈 개발"
       ],
-      "techStack": ["Spring Boot", "Java", "PostgreSQL", "JavaScript", "Chart.js,", "UDP통신"],
-      "thumbnail": "photo-1488590528505-98d2b5aba04b"
+      "techStack": ["Spring Boot", "Java", "PostgreSQL", "JavaScript", "Chart.js,", "UDP"],
+      "thumbnail": "/assets/image/project_carbon3.png"
     },
     {
       "id": 2,
@@ -25,8 +39,7 @@
         "계약서 PDF 미리보기 및 S3 signed URL 처리",
         "로그인 없이 접근 가능한 엔드포인트에 대한 Spring Security 설정"
       ],
-      "techStack": ["Spring Boot", "Java", "Thymeleaf", "한컴위드 API,", "공동인증서", "AWS S3"],
-      "thumbnail": "photo-1488590528505-98d2b5aba04b"
+      "techStack": ["Spring Boot", "Java", "Thymeleaf", "한컴위드 API,", "공동인증서", "AWS S3"]
     },
     {
       "id": 3,
@@ -41,7 +54,7 @@
         "사용자 중심의 재고 이력 조회 UI 및 필터링 기능 구현"
       ],
       "techStack": ["Spring Boot", "Java", "MyBatis", "MSSQL", "JavaScript"],
-      "thumbnail": "photo-1461749280684-dccba630e2f6"
+      "thumbnail": "/assets/image/project_komotek.png"
     },
     {
       "id": 4,
@@ -56,7 +69,7 @@
         "AI 예지보전 결과 연동 및 설비 상태 시각화"
       ],
       "techStack": ["Spring MVC", "Java", "Redis", "MySQL", "Chart.js", "REST API"],
-      "thumbnail": "photo-1498050108023-c5249f4df085"
+      "thumbnail": "/assets/image/project_cbtp.png"
     },
     {
       "id": 4,
@@ -70,25 +83,7 @@
         "복잡한 서브쿼리 리팩토링 + Index 튜닝으로 → 주요 쿼리 Cost 11 → 3으로 감소, 평균 응답속도 70% 이상 향상",
         "GS 인증 요건 대응 개발 및 테스트 지원"
       ],
-      "techStack": ["Spring MVC", "Java", "MyBatis", "jQuery", "Bootstrap"],
-      "thumbnail": "photo-1498050108023-c5249f4df085"
-    },
-    {
-      "id": 5,
-      "title": "개인 블로그 사이트",
-      "description": "개발 경험과 학습 내용을 공유하는 개인 블로그입니다. Markdown 에디터와 SEO 최적화를 적용하여 구축했습니다.",
-      "role": "전체 개발 담당, SEO 최적화 및 성능 튜닝",
-      "features": [
-        "Markdown 기반 포스트 작성",
-        "태그 및 카테고리 시스템",
-        "검색 기능 구현",
-        "SEO 최적화 적용",
-        "방문자 통계 대시보드"
-      ],
-      "techStack": ["Next.js", "MDX", "Tailwind CSS", "Vercel", "Google Analytics"],
-      "githubUrl": "https://github.com/doyeji/personal-blog",
-      "blogUrl": "https://doyeji.tistory.com/blog-development",
-      "thumbnail": "photo-1531297484001-80022131f5a1"
+      "techStack": ["Spring MVC", "Java", "MyBatis", "jQuery", "Bootstrap"]
     }
   ]
 }
