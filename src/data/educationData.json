@@ -3,61 +3,16 @@
   "educations": [
     {
       "id": 1,
-      "institution": "코드스테이츠",
-      "program": "Software Engineering Bootcamp",
-      "period": "2022.01 - 2022.06",
-      "type": "부트캠프",
-      "description": "풀스택 웹 개발 집중 과정으로 React, Node.js, Database 등을 학습했습니다.",
-      "techStack": ["JavaScript", "React", "Node.js", "Express", "MySQL", "MongoDB"],
+      "institution": "KG아이티뱅크",
+      "program": "AWS Technical Essentials 교육",
+      "period": "2023.06(3일)",
+      "type": "사내교육",
+      "description": "Cloud Operations on AWS (formerly Systems Operations)",
+      "techStack": ["AWS", "S3"],
       "projects": [
-        "팀 프로젝트: SNS 플랫폼 개발",
-        "개인 프로젝트: 영화 추천 웹앱",
-        "파이널 프로젝트: 온라인 쇼핑몰"
+        "AWS 구조 이해"
       ],
-      "achievements": ["최우수 프로젝트 선정", "페어 프로그래밍 리더 역할"]
-    },
-    {
-      "id": 2,
-      "institution": "Udemy",
-      "program": "Advanced React and Redux",
-      "period": "2021.09 - 2021.11",
-      "type": "온라인 과정",
-      "description": "React의 고급 개념과 Redux 상태관리를 심화 학습했습니다.",
-      "techStack": ["React", "Redux", "React Router", "Testing Library"],
-      "projects": [
-        "Redux를 활용한 쇼핑카트 앱",
-        "React Testing Library를 이용한 테스트 작성"
-      ],
-      "achievements": ["수료증 취득", "5성급 평가 완료"]
-    },
-    {
-      "id": 3,
-      "institution": "패스트캠퍼스",
-      "program": "프론트엔드 개발 올인원 패키지",
-      "period": "2021.03 - 2021.08",
-      "type": "온라인 과정",
-      "description": "HTML, CSS, JavaScript부터 React까지 프론트엔드 개발의 전반적인 스킬을 습득했습니다.",
-      "techStack": ["HTML5", "CSS3", "JavaScript ES6+", "React", "Git", "Webpack"],
-      "projects": [
-        "반응형 포트폴리오 웹사이트",
-        "바닐라 JavaScript로 만든 ToDo 앱",
-        "React 날씨 정보 앱"
-      ],
-      "achievements": ["프로젝트 우수상", "멘토링 참여"]
-    },
-    {
-      "id": 4,
-      "institution": "Google Developers",
-      "program": "Web Performance Optimization",
-      "period": "2022.08 - 2022.09",
-      "type": "온라인 워크샵",
-      "description": "웹 성능 최적화 기법과 Core Web Vitals 개선 방법을 학습했습니다.",
-      "techStack": ["Lighthouse", "WebPageTest", "Chrome DevTools", "Webpack"],
-      "projects": [
-        "기존 웹사이트 성능 분석 및 개선",
-        "이미지 최적화 및 레이지 로딩 구현"
-      ],
-      "achievements": ["Google 인증서 취득", "성능 개선 50% 달성"]
+      "achievements": []
     }
   ]
 }
