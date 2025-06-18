@@ -13,6 +13,32 @@
         "AWS 구조 이해"
       ],
       "achievements": []
+    },
+    {
+      "id": 2,
+      "institution": "EZEN 아카데미",
+      "program": "파이썬(python) 프로그래밍과 빅데이터 분석 ",
+      "period": "2022.05 ~ 2022.07",
+      "type": "국비지원교육",
+      "description": "파이썬 기초 문법 교육 및 파이썬 라이브러리를 활용한 데이터 분석",
+      "techStack": ["python", "S3"],
+      "projects": [
+        "파이썬 기초 문법 교육 및 파이썬 라이브러리를 활용한 데이터 분석"
+      ],
+      "achievements": []
+    },
+    {
+      "id": 3,
+      "institution": "EZEN 아카데미",
+      "program": "응용 SW 엔지니어링(JAVA, 벡엔드 웹개발자) ",
+      "period": "2020.03 ~ 2020.08",
+      "type": "국비지원교육",
+      "description": "bootstrap을 활용한 데이터베이스 설계 및 spring 기반의 Team 프로젝트 진행",
+      "techStack": ["spring", "bootstrap"],
+      "projects": [
+        "bootstrap을 활용한 데이터베이스 설계 및 spring 기반의 Team 프로젝트 진행"
+      ],
+      "achievements": []
     }
   ]
 }
