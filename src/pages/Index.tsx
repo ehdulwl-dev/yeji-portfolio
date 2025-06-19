@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import CareerSection from "@/components/CareerSection";
 
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail, GithubIcon} from "lucide-react";
 
 const Index = () => {
   const [showInfo, setShowInfo] = useState(false);
@@ -26,7 +26,7 @@ const Index = () => {
         <div className="flex flex-col md:flex-row min-h-screen">
           
           {/* Left: Profile (40%) with gray background */}
-          <div className="md:basis-[30%] w-full flex flex-col items-center justify-center md:items-center md:justify-center text-center md:text-left p-8 md:p-12 bg-gray-100 space-y-6">
+          <div className="md:basis-[30%] w-full flex flex-col items-center justify-center md:items-center md:justify-center text-center md:text-left p-8 md:p-12 bg-blue-100 space-y-6">
             <img 
               src="/assets/image/my.png" 
               alt="Profile" 
@@ -34,7 +34,7 @@ const Index = () => {
               style={{ borderRadius: "100px" }}
             />
             <p className="text-lg md:text-xl leading-relaxed pt-4">
-              끊임없이 성장하는 개발자 <span className="font-bold">도예지</span> 입니다.
+              <span className="font-bold">협업</span>하며 <span className="font-bold">성장</span>하는 개발자 <span className="font-bold">도예지</span> 입니다.
             </p>
             <div className="space-y-3 text-base md:text-lg pt-4">
               <div className="flex items-center space-x-2 gap-6">
@@ -48,6 +48,17 @@ const Index = () => {
               <div className="flex items-center space-x-2 gap-6">
                 <Mail className="w-5 h-5 text-black" />
                 <span>ehdulwl@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-2  ">
+                <a 
+                    href="https://github.com/ehdulwl-dev" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center space-x-2 gap-6"
+                  >
+                  <GithubIcon size={24} className="w-5 h-5 text-black" />
+                  <span>https://github.com/ehdulwl-dev</span>
+                  </a>
               </div>
             </div>
           </div>
