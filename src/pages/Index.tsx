@@ -37,15 +37,15 @@ const Index = () => {
               끊임없이 성장하는 개발자 <span className="font-bold">도예지</span> 입니다.
             </p>
             <div className="space-y-3 text-base md:text-lg pt-4">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 gap-6">
                 <Phone className="w-5 h-5 text-black" />
                 <span>010-3706-9975</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 gap-6">
                 <MapPin className="w-5 h-5 text-black" />
                 <span>경기도 안양시</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 gap-6">
                 <Mail className="w-5 h-5 text-black" />
                 <span>ehdulwl@gmail.com</span>
               </div>
