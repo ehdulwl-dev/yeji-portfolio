@@ -12,6 +12,7 @@ interface ProjectCardProps {
   githubUrl?: string;
   blogUrl?: string;
   thumbnail?: string;
+  achieve?: string;
   delay?: number;
   isOpen: boolean;
   onToggle: () => void;
@@ -26,6 +27,7 @@ const ProjectCard = ({
   githubUrl, 
   blogUrl,
   thumbnail,
+  achieve,
   delay = 0,
   isOpen,
   onToggle
@@ -64,13 +66,18 @@ const ProjectCard = ({
           <div className="space-y-1 list-disc list-inside text-sm text-gray-700">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start space-x-2">
-                <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-1.5 h-1.5 bg-blue-800 rounded-full mt-2 flex-shrink-0"></div>
                 <span className="text-sm text-gray-700">{feature}</span>
               </div>
             ))}
           </div>
         </div>
-
+        {achieve && (
+           <div className="mb-4">
+          <h4 className="text-sm font-semibold text-gray-900 mt-4 mb-2">성과</h4>
+            <p className="text-sm text-gray-700">{achieve}</p>
+          </div>
+        )}
         {/* Tech Stack */}
         <div className="mb-4">
           <h4 className="text-sm font-semibold text-black mb-2">기술 스택</h4>
@@ -101,7 +108,7 @@ const ProjectCard = ({
               href={blogUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white hover:bg-blue-500 rounded-lg transition-colors flex-1 justify-center"
+              className="flex items-center space-x-2 px-4 py-2 bg-blue-800 text-white hover:bg-blue-500 rounded-lg transition-colors flex-1 justify-center"
             >
               <ExternalLink size={16} />
               <span className="text-sm font-medium">Blog</span>

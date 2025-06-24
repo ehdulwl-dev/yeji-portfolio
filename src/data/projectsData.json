@@ -4,16 +4,17 @@
     {
       "id": 1,
       "title": "시니어 재취업 AI 구직 지원 서비스 개발",
-      "description": "서울 열린데이터 광장 공공데이터 활용 창업 경진대회 팀 프로젝트",
-      "role": "서울시 열린데이터 광장 및 고용 24의 Open API 연동 및 서비스 구축",
+      "description": "서울 열린데이터 광장 공공데이터 활용 창업 경진대회 팀 프로젝트로",
+      "role": "공공 API(OpenAPI) 설계 및 데이터 파이프라인 구축 및 Supabase 기반 DB 설계 및 연동",
       "features": [
-        "시니어 맞춤 채용 정보와 교육 프로그램 정보를 정기적으로 자동 수집",
-        "오픈소스 기반의 Supabase(PostgreSQL 기반) 활용",
-        "Typescript 및 React 기반의 시니어 친화적인 UI/UX 설계 및 구현",
-        "Vercel을 통한 운영서버 구축"
+        "시니어 맞춤 채용 정보와 교육 프로그램 자동 수집 스케쥴러 개발",
+        "Supabase(PostgreSQL 기반) 테이블 스키마 설계 및 권한 관리 적용활용",
+        "시니어 사용성을 고려한 반응형 UI 설계 (Lovable, React, TypeScript)",
+        "운영 서버를 Vercel로 무중단 배포"
       ],
-      "techStack": ["lovable", "Supabase", "OpenAPI", "Typescript", "React,", "Vercel"],
-      "thumbnail": "/assets/image/project_navi.png"
+      "techStack": ["Supabase", "OpenAPI", "Typescript", "React,", "Vercel"],
+      "thumbnail": "/assets/image/project_navi.png",
+      "achieve" : "2025 창업 경진대회 제품·서비스 기획 부문 한구장학재단 이사장상 수상 (2025.06)"
     },
     {
       "id": 1,

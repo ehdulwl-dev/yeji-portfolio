@@ -57,9 +57,8 @@ const Projects = () => {
                 role={project.role}
                 features={project.features}
                 techStack={project.techStack}
-                githubUrl={project.githubUrl}
-                blogUrl={project.blogUrl}
                 thumbnail={project.thumbnail}
+                achieve={project.achieve}
                 delay={index * 100}
                 isOpen={isAllOpen || openIndex === index}  // 👈 전체 보기 or 특정 인덱스만 열기
                 onToggle={() =>
