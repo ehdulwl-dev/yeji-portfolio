@@ -34,7 +34,10 @@ const Index = () => {
               style={{ borderRadius: "100px" }}
             />
             <p className="text-lg md:text-xl leading-relaxed pt-4">
-              <span className="font-bold">협업</span>하며 <span className="font-bold">성장</span>하는 개발자 <span className="font-bold">도예지</span> 입니다.
+              <span className="">스타트업 경험으로 </span>
+              <span className="font-bold">협업하며 성장해온</span> <br></br>
+              <span className="font-bold">5년차 개발자 도예지</span> 입니다. 
+              
             </p>
             <div className="space-y-3 text-base md:text-lg pt-4">
               <div className="flex items-center space-x-2 gap-6">
@@ -76,14 +79,14 @@ const Index = () => {
             </button>
 
             <p className="mt-6 text-lg md:text-xl text-muted-foreground animate-slide-up">
-              Frontend Developer & Backend Developer
+              Full-stack Developer & Collaborator
             </p>
 
             <p 
               className="mt-3 text-sm md:text-base text-muted-foreground/70 animate-slide-up" 
               style={{ animationDelay: "200ms" }}
             >
-              Click my name to know more about me
+              Doyeji를 클릭해 제 학력과 경력을 편하게 확인해보세요.
             </p>
           </div>
 

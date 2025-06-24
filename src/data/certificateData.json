@@ -21,12 +21,6 @@
     },
     {
       "id": 1,
-      "institution": "TOEIC",
-      "period": "준비중",
-      "type": "공인어학"
-    },
-    {
-      "id": 1,
       "institution": "HSK(3급)",
       "period": "2022.06",
       "type": "공인어학"

@@ -57,7 +57,7 @@ const EducationCard = ({
       
       {/* Projects */}
       <div className="mb-4">
-        <h4 className="text-sm font-semibold text-black mb-2">프로젝트</h4>
+        <h4 className="text-sm font-semibold text-black mb-2">핵심 성과</h4>
         <div className="space-y-1">
           {projects.map((project, index) => (
             <div key={index} className="flex items-start space-x-2">
@@ -69,7 +69,7 @@ const EducationCard = ({
       </div>
       
       {/* Achievements */}
-      <div>
+      {/* <div>
         <h4 className="text-sm font-semibold text-black mb-2 flex items-center space-x-2">
           <Award size={16} />
           <span>성과</span>
@@ -82,7 +82,7 @@ const EducationCard = ({
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
