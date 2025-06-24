@@ -58,7 +58,7 @@ const ProjectCard = ({
         
         <div className="mb-4">
           <h4 className="text-sm font-semibold text-gray-900 mt-4 mb-2">담당 역할</h4>
-          <p className="text-sm text-gray-700">{role}</p>
+          <p className="text-sm text-gray-700 font-bold">{role}</p>
         </div>
         
         <div className="mb-6">
@@ -74,7 +74,7 @@ const ProjectCard = ({
         </div>
         {achieve && (
            <div className="mb-4">
-          <h4 className="text-sm font-semibold text-gray-900 mt-4 mb-2">성과</h4>
+          <h4 className="text-sm font-semibold text-gray-900 mt-4 mb-2">업무 성과</h4>
             <p className="text-sm text-gray-700">{achieve}</p>
           </div>
         )}
