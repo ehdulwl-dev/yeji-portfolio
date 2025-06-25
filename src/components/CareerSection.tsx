@@ -9,10 +9,10 @@ const CareerSection = () => {
       description: "Spring Boot 기반 스마트팩토리 MES 웹 시스템 개발 및 운영",
       achievements: [
         "다양한 제조 공정(MES/POP) 특화 웹 시스템 설계 및 구축",
-        "Spring Boot 기반 벡엔드 API 개발 및 데이터 흐름 설계",
+        "Spring Boot 기반 벡엔드 API 개발 및 프로세스 설계",
         "MySQL, MSSQL, PostgreSQL 등 오픈소스 DB 구축 및 운영",
         "JavaScript, jQuery, ag-Grid, DevExpress 등 활용한 UI 구성 및 고도화",
-        "개발 일정 수립과 협업 관리"
+        "고객사와의 협업을 통해 요구사항을 파악하고, 커뮤니케이션 중심의 프로젝트 리딩(PL) 경험"
       ],
     },
   ];
